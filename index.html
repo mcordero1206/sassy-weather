@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:900" rel="stylesheet">	
+<script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/weather-interface.js"></script>
+<title>Sassy Weather</title>
+<style>
+
+.container {
+	opacity: .1;
+	transition: opacity 500ms ease;
+	position: absolute;
+}
+.container:hover { opacity: 1; }	
+.sassyContainer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}	
+.sassy {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 72px;
+    margin: auto auto;
+}
+.whiteOnBlack {
+    background-color: black;
+    color: white;
+}	
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Sassy Weather Generator</h1>
+  <label for="location">Enter a location:</label>
+  <input id="location" type="text">
+  <button class="btn-success" id="weatherLocation">Get Sassy!</button>
+  <div class="errors"></div>
+  <div class="showHumidity"></div>
+  <div class="showTemp"></div>
+  <div class="showCondition"></div>
+  <button class="btn-invert" id="invert">Invert colors!</button>
+</div>
+<div class="sassyContainer">
+  <div class="sassy"></div>
+</div>
+</body>
+</html>
