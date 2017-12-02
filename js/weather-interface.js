@@ -7,7 +7,7 @@ $(document).ready(function () {
 		var city = $('#location').val();
 //		$('#location').val("");
 		$.ajax({
-			url: 'http://api.openweathermap.org/data/2.5/weather?q=' + city + '&units=imperial&appid=7e86610d1544c5aa01ff843d27fdc27f',
+			url: 'https://api.openweathermap.org/data/2.5/weather?q=' + city + '&units=imperial&appid=7e86610d1544c5aa01ff843d27fdc27f',
 			type: 'GET',
 			data: {
 				format: 'json'
